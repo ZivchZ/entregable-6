@@ -25,8 +25,8 @@ function App() {
         <Route path='/' element={ <Home/> } />
         <Route path='/login' element={ <Login/> } />
         
-        <Route path='/news/:id' element={ <NewsDetail/> } />
         <Route element={<ProtectedRoutes/>}>
+          <Route path='/news/:id' element={ <NewsDetail/> } />
           <Route path='/favorites' element={ <Favorites/> } />
         </Route>
       </Routes>
